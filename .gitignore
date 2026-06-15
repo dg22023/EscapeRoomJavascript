@@ -26,6 +26,7 @@ ehthumbs.db
 *.sublime-project
 *.swp
 *.swo
+*.md
 
 # Registros (Logs)
 npm-debug.log*
