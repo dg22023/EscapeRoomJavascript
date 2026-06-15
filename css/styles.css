@@ -1,0 +1,27 @@
+/* Estilos personalizados para el Escape Room */
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.level-container {
+    transition: opacity 0.5s ease-in-out;
+}
+
+.card {
+    border: 2px solid #4a4a4a;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+}
+
+#nivel2-ui canvas {
+    background-color: #1a1a1a;
+    border: 1px solid #00ff00;
+    max-width: 100%;
+    height: auto;
+}
+
+.alert {
+    margin-top: 1rem;
+}
