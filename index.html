@@ -67,12 +67,35 @@
                 </div>
             </div>
 
-            <!-- Nivel 4: Pendiente (Integrante 2) -->
+            <!-- Nivel 4: El Núcleo de Procesamiento (Web Workers) -->
             <div id="level-4" class="level-container d-none">
                 <div class="card bg-secondary text-white">
                     <div class="card-body text-center">
-                        <h2 class="card-title">Nivel 4</h2>
-                        <p class="card-text">Nivel en desarrollo...</p>
+                        <h2 class="card-title">Nivel 4: El Núcleo de Procesamiento</h2>
+                        <p class="card-text">El sistema ha detectado una sobrecarga de datos. Debes analizar <strong>20,000 lecturas</strong> de dos sensores virtuales sin bloquear la interfaz.</p>
+
+                        <button id="nivel4-btn-procesar" class="btn btn-primary mt-3">
+                            Iniciar Procesamiento
+                        </button>
+
+                        <div id="nivel4-progreso-contenedor" class="d-none mt-3">
+                            <p id="nivel4-texto-progreso" class="small mb-1">Procesando datos... 0%</p>
+                            <div class="progress" role="progressbar"
+                                 aria-label="Progreso de análisis"
+                                 aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+                                <div id="nivel4-barra" class="progress-bar bg-primary" style="width: 0%">
+                                    0%
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="nivel4-resultado-contenedor" class="d-none mt-4">
+                            <!-- Llenado dinámicamente por nivel4.js -->
+                        </div>
+
+                        <button id="nivel4-btn-siguiente" class="btn btn-success mt-3 d-none">
+                            Continuar al Nivel 5
+                        </button>
                     </div>
                 </div>
             </div>
@@ -94,5 +117,6 @@
     <script src="js/main.js"></script>
     <script src="js/nivel1.js"></script>
     <script src="js/nivel2.js"></script>
+    <script src="js/nivel4.js"></script>
 </body>
 </html>
