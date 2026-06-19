@@ -42,6 +42,7 @@ function navigateToLevel(levelId) {
         // Inicializar lógica específica del nivel si existe
         if (levelId === 1) initLevel1();
         if (levelId === 2) initLevel2();
+        if (levelId === 4) initLevel4();
     }
 }
 
@@ -64,3 +65,4 @@ document.addEventListener('DOMContentLoaded', () => {
         startBtn.addEventListener('click', () => navigateToLevel(1));
     }
 });
+
