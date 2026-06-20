@@ -162,12 +162,49 @@
                 </div>
             </div>
 
-            <!-- Nivel 5: Final -->
+            <!-- Nivel 5: Procesamiento Avanzado (Web Worker II) y Exportación -->
             <div id="level-5" class="level-container d-none">
+                <div class="card bg-secondary text-white">
+                    <div class="card-body text-center">
+                        <h2 class="card-title">Nivel 5: El Archivo Secreto</h2>
+                        <p class="card-text">
+                            Se han generado <strong>250,000 registros</strong> de sensores con valores negativos aleatorios.
+                            Debes filtrar los inválidos, calcular estadísticas y exportar el resultado en JSON.
+                        </p>
+
+                        <button id="nivel5-btn-procesar" class="btn btn-primary mt-3">
+                            Iniciar Procesamiento
+                        </button>
+
+                        <div id="nivel5-progreso-contenedor" class="d-none mt-3">
+                            <p id="nivel5-texto-progreso" class="small mb-1">Procesando datos... 0%</p>
+                            <div class="progress" role="progressbar"
+                                 aria-label="Progreso de análisis"
+                                 aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+                                <div id="nivel5-barra" class="progress-bar bg-success" style="width: 0%">0%</div>
+                            </div>
+                        </div>
+
+                        <div id="nivel5-resultado-contenedor" class="d-none mt-4"></div>
+
+                        <button id="nivel5-btn-exportar" class="btn btn-warning mt-3 d-none">
+                            Exportar JSON
+                        </button>
+
+                        <button id="nivel5-btn-finalizar" class="btn btn-success mt-3 d-none">
+                            Finalizar Escape Room
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pantalla de Victoria -->
+            <div id="level-6" class="level-container d-none">
                 <div class="card bg-success text-white">
                     <div class="card-body text-center">
                         <h2 class="card-title">¡Has Escapado!</h2>
-                        <p class="card-text">Felicidades, has completado todos los desafíos.</p>
+                        <p class="card-text">Felicidades, has completado todos los desafíos de la Cámara de los Cinco Desafíos.</p>
+                        <p class="card-text">Has demostrado dominio de Geolocalización, Canvas, Multimedia, Web Workers y Exportación de datos.</p>
                     </div>
                 </div>
             </div>
@@ -181,5 +218,6 @@
     <script src="js/nivel2.js"></script>
     <script src="js/nivel3.js"></script>
     <script src="js/nivel4.js"></script>
+    <script src="js/nivel5.js"></script>
 </body>
 </html>
