@@ -5,12 +5,13 @@
 const gameState = {
     currentLevel: 0,
     levelsCompleted: {
-        0: true, // Inicio siempre disponible
+        0: true,
         1: false,
         2: false,
         3: false,
         4: false,
-        5: false
+        5: false,
+        6: false
     },
     userData: {
         location: null
@@ -44,6 +45,7 @@ function navigateToLevel(levelId) {
         if (levelId === 2) initLevel2();
         if (levelId === 3) initLevel3();
         if (levelId === 4) initLevel4();
+        if (levelId === 5) initLevel5();
     }
 }
 
