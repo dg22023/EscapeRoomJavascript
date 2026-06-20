@@ -1,0 +1,69 @@
+/* Estilos personalizados para el Escape Room */
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.level-container {
+    transition: opacity 0.5s ease-in-out;
+}
+
+.card {
+    border: 2px solid #4a4a4a;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+}
+
+#nivel2-ui canvas {
+    background-color: #1a1a1a;
+    border: 1px solid #00ff00;
+    max-width: 100%;
+    height: auto;
+}
+
+.alert {
+    margin-top: 1rem;
+}
+
+/* ==========================================
+   NIVEL 3 - LA EVIDENCIA DEL EXPLORADOR
+========================================== */
+
+#camera-video {
+    width: 100%;
+    max-width: 640px;
+    height: auto;
+    border: 3px solid #0d6efd;
+    border-radius: 10px;
+    background-color: #000;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#captured-photo {
+    width: 100%;
+    max-width: 640px;
+    height: auto;
+    border: 3px solid #198754;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#camera-message {
+    min-height: 50px;
+}
+
+#level-3 .btn {
+    min-width: 180px;
+    margin: 5px;
+}
+
+@media (max-width: 768px) {
+
+    #level-3 .btn {
+        width: 100%;
+    }
+
+}
