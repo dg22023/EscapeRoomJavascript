@@ -60,9 +60,27 @@ body {
     margin: 5px;
 }
 
+/* ==========================================
+   NIVEL 5 - EL ARCHIVO SECRETO
+========================================== */
+
+#level-5 ol {
+    padding-left: 1.5rem;
+}
+
+#level-5 .btn {
+    min-width: 180px;
+    margin: 5px;
+}
+
+#level-5 .card .card-header {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
 @media (max-width: 768px) {
 
-    #level-3 .btn {
+    #level-3 .btn,
+    #level-5 .btn {
         width: 100%;
     }
 
