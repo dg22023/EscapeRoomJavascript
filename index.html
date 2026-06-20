@@ -57,15 +57,77 @@
                 </div>
             </div>
 
-            <!-- Nivel 3: Pendiente (Integrante 2) -->
-            <div id="level-3" class="level-container d-none">
-                <div class="card bg-secondary text-white">
-                    <div class="card-body text-center">
-                        <h2 class="card-title">Nivel 3</h2>
-                        <p class="card-text">Nivel en desarrollo...</p>
-                    </div>
-                </div>
+            
+            <!-- Nivel 3: La Evidencia del Explorador -->
+<div id="level-3" class="level-container d-none">
+    <div class="card bg-secondary text-white">
+        <div class="card-body text-center">
+
+            <h2 class="card-title">Nivel 3: La Evidencia del Explorador</h2>
+
+            <p class="card-text">
+                Debes activar la cámara y capturar una fotografía como evidencia
+                para continuar.
+            </p>
+
+            <!-- Video -->
+            <video
+                id="camera-video"
+                width="640"
+                height="480"
+                autoplay
+                playsinline
+                class="img-fluid rounded border border-light">
+            </video>
+
+            <!-- Canvas oculto -->
+            <canvas
+                id="camera-canvas"
+                width="640"
+                height="480"
+                class="d-none">
+            </canvas>
+
+            <!-- Fotografía -->
+            <div class="mt-4">
+                <img
+                    id="captured-photo"
+                    class="img-fluid rounded shadow d-none"
+                    alt="Fotografía capturada">
             </div>
+
+            <!-- Botones -->
+            <div class="mt-4">
+
+                <button
+                    id="start-camera-btn"
+                    class="btn btn-primary">
+                    Activar Cámara
+                </button>
+
+                <button
+                    id="capture-photo-btn"
+                    class="btn btn-warning d-none">
+                    Capturar Fotografía
+                </button>
+
+                <button
+                    id="continue-level-4-btn"
+                    class="btn btn-success d-none">
+                    Continuar al Nivel 4
+                </button>
+
+            </div>
+
+            <!-- Mensajes -->
+            <div
+                id="camera-message"
+                class="mt-4">
+            </div>
+
+        </div>
+    </div>
+</div>
 
             <!-- Nivel 4: El Núcleo de Procesamiento (Web Workers) -->
             <div id="level-4" class="level-container d-none">
@@ -117,6 +179,7 @@
     <script src="js/main.js"></script>
     <script src="js/nivel1.js"></script>
     <script src="js/nivel2.js"></script>
+    <script src="js/nivel3.js"></script>
     <script src="js/nivel4.js"></script>
 </body>
 </html>
