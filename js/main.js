@@ -44,6 +44,7 @@ function navigateToLevel(levelId) {
         if (levelId === 2) initLevel2();
         if (levelId === 3) initLevel3();
         if (levelId === 4) initLevel4();
+        if (levelId === 5) initLevel5();
     }
 }
 
