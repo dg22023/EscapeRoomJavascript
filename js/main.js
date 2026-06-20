@@ -42,6 +42,7 @@ function navigateToLevel(levelId) {
         // Inicializar lógica específica del nivel si existe
         if (levelId === 1) initLevel1();
         if (levelId === 2) initLevel2();
+        if (levelId === 3) initLevel3();
         if (levelId === 4) initLevel4();
     }
 }

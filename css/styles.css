@@ -25,3 +25,45 @@ body {
 .alert {
     margin-top: 1rem;
 }
+
+/* ==========================================
+   NIVEL 3 - LA EVIDENCIA DEL EXPLORADOR
+========================================== */
+
+#camera-video {
+    width: 100%;
+    max-width: 640px;
+    height: auto;
+    border: 3px solid #0d6efd;
+    border-radius: 10px;
+    background-color: #000;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#captured-photo {
+    width: 100%;
+    max-width: 640px;
+    height: auto;
+    border: 3px solid #198754;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#camera-message {
+    min-height: 50px;
+}
+
+#level-3 .btn {
+    min-width: 180px;
+    margin: 5px;
+}
+
+@media (max-width: 768px) {
+
+    #level-3 .btn {
+        width: 100%;
+    }
+
+}
